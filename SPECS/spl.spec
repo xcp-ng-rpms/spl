@@ -9,6 +9,7 @@
 # - install kernel-devel
 # - ./configure
 # - make srpms
+# How to import the SRPM:
 # - import_srpm.py /path/to/spl-VERSION-RELEASE.src.rpm . upstream upstream upstream-VERSION -cp
 # - merge upstream-VERSION to master
 
