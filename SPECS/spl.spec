@@ -21,7 +21,7 @@
 %global __brp_mangle_shebangs_exclude_from	splslab.py
 
 Name:           spl
-Version:        0.7.9
+Version:        0.7.11
 Release:        1%{?dist}
 Summary:        Commands to control the kernel modules
 
@@ -56,6 +56,12 @@ make install DESTDIR=%{?buildroot}
 %{_mandir}/man5/*
 
 %changelog
+* Thu Sep 13 2018 Tony Hutter <hutter2@llnl.gov> - 0.7.11-1
+- Released 0.7.11-1, detailed release notes are available at:
+- https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.7.11
+* Wed Sep 05 2018 Tony Hutter <hutter2@llnl.gov> - 0.7.10-1
+- Released 0.7.10-1, detailed release notes are available at:
+- https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.7.10
 * Tue May 08 2018 Tony Hutter <hutter2@llnl.gov> - 0.7.9-1
 - Released 0.7.9-1, detailed release notes are available at:
 - https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.7.9
