@@ -9,6 +9,8 @@
 # - install kernel-devel
 # - ./configure
 # - make srpms
+# - import_srpm.py /path/to/spl-VERSION-RELEASE.src.rpm . upstream upstream upstream-VERSION -cp
+# - merge upstream-VERSION to master
 
 # Python permits the !/usr/bin/python shebang for scripts that are cross
 # compatible between python2 and python3, but Fedora 28 does not.  Fedora
