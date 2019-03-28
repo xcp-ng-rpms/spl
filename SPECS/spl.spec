@@ -36,6 +36,8 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:       %{name}-kmod = %{version}
 Provides:       %{name}-kmod-common = %{version}
 
+BuildRequires:  gcc
+
 %description
 This package contains the commands to verify the SPL
 kernel modules are functioning properly.
