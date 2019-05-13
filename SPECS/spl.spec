@@ -9,7 +9,7 @@
 %global __brp_mangle_shebangs_exclude_from	splslab.py
 
 Name:           spl
-Version:        0.7.11
+Version:        0.7.13
 Release:        1%{?dist}
 Summary:        Commands to control the kernel modules
 
@@ -20,6 +20,9 @@ Source0:        %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:       %{name}-kmod = %{version}
 Provides:       %{name}-kmod-common = %{version}
+%if 0%{?rhel}%{?fedora}%{?suse_version}
+BuildRequires:  gcc, make
+%endif
 
 %description
 This package contains the commands to verify the SPL
@@ -44,6 +47,12 @@ make install DESTDIR=%{?buildroot}
 %{_mandir}/man5/*
 
 %changelog
+* Fri Feb 22 2019 Tony Hutter <hutter2@llnl.gov> - 0.7.13-1
+- Released 0.7.13-1, detailed release notes are available at:
+- https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.7.13
+* Thu Nov 08 2018 Tony Hutter <hutter2@llnl.gov> - 0.7.12-1
+- Released 0.7.12-1, detailed release notes are available at:
+- https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.7.12
 * Thu Sep 13 2018 Tony Hutter <hutter2@llnl.gov> - 0.7.11-1
 - Released 0.7.11-1, detailed release notes are available at:
 - https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.7.11
